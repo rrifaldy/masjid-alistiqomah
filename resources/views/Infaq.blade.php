@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .hidden {
             display: none;
@@ -71,7 +72,7 @@
                     <!-- Amount Form -->
                     <div id="amount-form">
                         <img src="{{ asset('../img/logo3.png') }}" class="w-32 mx-auto mb-1" alt="Logo">
-                        <h2 class="text-center font-bold text-2xl text-black">Kenceng Online</h2>
+                        <h2 class="text-center font-bold text-2xl text-black">Kencleng Online</h2>
                         <h2 class="text-center text-md text-black">Semudah mengisi kotak amal, masukkan jumlah sesuai kemampuan</h2>
                         <div class="px-5 py-7">
                             <label class="font-semibold text-sm text-gray-600 pb-1 block">Nominal</label>
@@ -104,7 +105,7 @@
                     <!-- Contact Form (Initially Hidden) -->
                     <div id="contact-form" class="hidden">
                         <img src="{{ asset('../img/logo3.png') }}" class="w-32 mx-auto mb-1" alt="Logo">
-                        <h2 class="text-center font-bold text-2xl text-black">Kenceng Online</h2>
+                        <h2 class="text-center font-bold text-2xl text-black">Kencleng Online</h2>
                         <h2 class="text-center text-md text-black">Semudah mengisi kotak amal, masukkan jumlah sesuai kemampuan</h2>
                         <div class="px-5 py-7">
                             <label class="font-semibold text-sm text-gray-600 pb-1 block">Nama Lengkap</label>
@@ -125,35 +126,59 @@
                     <!-- Account Details Form (Initially Hidden) -->
                     <div id="bank-form" class="hidden">
                         <img src="{{ asset('../img/logo3.png') }}" class="w-32 mx-auto mb-1" alt="Logo">
-                        <h2 class="text-center font-bold text-2xl text-black">Kenceng Online</h2>
+                        <h2 class="text-center font-bold text-2xl text-black">Kencleng Online</h2>
                         <h2 class="text-center text-md text-black">Semudah mengisi kotak amal, masukkan jumlah sesuai kemampuan</h2>
                         <div class="px-5 py-7">
                             <div class="grid grid-cols-3 gap-4">
-                                <div class="border rounded-lg p-5">
-                                    <h3 class="text-center font-bold text-lg">10.000</h3>
-                                    <p class="text-center text-sm">10.000</p>
+                                <!-- ShopeePay -->
+                                <div class="border rounded-lg p-5 flex flex-col justify-between items-center">
+                                    <img src="{{ asset('../img/logo-shopee.png') }}" class="w-24 h-16 mx-auto mb-2" alt="ShopeePay">
+                                    <div class="text-center">
+                                        <h3 class="font-normal text-sm">089613131312</h3>
+                                        <p class="text-sm text-gray-600">John Doe</p>
+                                    </div>
                                 </div>
-                                <div class="border rounded-lg p-5">
-                                    <h3 class="text-center font-bold text-lg">25.000</h3>
-                                    <p class="text-center text-sm">25.000</p>
+                                <!-- OVO -->
+                                <div class="border rounded-lg p-5 flex flex-col justify-between items-center">
+                                    <img src="{{ asset('../img/logo-ovo.png') }}" class="w-24 h-16 mx-auto mb-2" alt="OVO">
+                                    <div class="text-center">
+                                        <h3 class="font-normal text-sm">089613131312</h3>
+                                        <p class="text-sm text-gray-600">John Doe</p>
+                                    </div>
                                 </div>
-                                <div class="border rounded-lg p-5">
-                                    <h3 class="text-center font-bold text-lg">50.000</h3>
-                                    <p class="text-center text-sm">50.000</p>
+                                <!-- GoPay -->
+                                <div class="border rounded-lg p-5 flex flex-col justify-between items-center">
+                                    <img src="{{ asset('../img/logo-gopay.png') }}" class="w-32 h-16 mx-auto mb-2" alt="GoPay">
+                                    <div class="text-center">
+                                        <h3 class="font-normal text-sm">089613131312</h3>
+                                        <p class="text-sm text-gray-600">John Doe</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="mt-5 grid grid-cols-3 gap-4">
-                                <div class="border rounded-lg p-5">
-                                    <h3 class="text-center font-bold text-lg">100.000</h3>
-                                    <p class="text-center text-sm">100.000</p>
+                                <!-- BRI -->
+                                <div class="border rounded-lg p-5 flex flex-col justify-between items-center">
+                                    <img src="{{ asset('../img/logo-bri.png') }}" class="w-24 h-16 mx-auto mb-2" alt="BRI">
+                                    <div class="text-center">
+                                        <h3 class="font-normal text-sm">1410414141</h3>
+                                        <p class="text-sm text-gray-600">John Doe</p>
+                                    </div>
                                 </div>
-                                <div class="border rounded-lg p-5">
-                                    <h3 class="text-center font-bold text-lg">250.000</h3>
-                                    <p class="text-center text-sm">250.000</p>
+                                <!-- BCA -->
+                                <div class="border rounded-lg p-5 flex flex-col justify-between items-center">
+                                    <img src="{{ asset('../img/logo-bca.png') }}" class="w-32 h-16 mx-auto mb-2" alt="BCA">
+                                    <div class="text-center">
+                                        <h3 class="font-normal text-sm">2055201111</h3>
+                                        <p class="text-sm text-gray-600">John Doe</p>
+                                    </div>
                                 </div>
-                                <div class="border rounded-lg p-5">
-                                    <h3 class="text-center font-bold text-lg">500.000</h3>
-                                    <p class="text-center text-sm">500.000</p>
+                                <!-- BNI -->
+                                <div class="border rounded-lg p-5 flex flex-col justify-between items-center">
+                                    <img src="{{ asset('../img/logo-bni.png') }}" class="w-24 h-16 mx-auto mb-2" alt="BNI">
+                                    <div class="text-center">
+                                        <h3 class="font-normal text-sm">44141414</h3>
+                                        <p class="text-sm text-gray-600">John Doe</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex justify-around mt-5">
@@ -167,10 +192,13 @@
                         </div>
                     </div>
 
+
+
+
                     <!-- Upload Form (Initially Hidden) -->
                     <div id="upload-form" class="hidden">
                         <img src="{{ asset('../img/logo3.png') }}" class="w-32 mx-auto mb-1" alt="Logo">
-                        <h2 class="text-center font-bold text-2xl text-black">Kenceng Online</h2>
+                        <h2 class="text-center font-bold text-2xl text-black">Kencleng Online</h2>
                         <h2 class="text-center text-md text-black">Semudah mengisi kotak amal, masukkan jumlah sesuai kemampuan</h2>
                         <div class="px-5 py-7">
                             <label class="font-semibold text-sm text-gray-600 pb-1 block">Upload Bukti</label>
@@ -188,8 +216,8 @@
 
                     <!-- Success Message Form (Initially Hidden) -->
                     <div id="success-form" class="hidden">
-                    <img src="{{ asset('../img/logo3.png') }}" class="w-32 mx-auto mb-1" alt="Logo">
-                        <h2 class="text-center font-bold text-2xl text-black">Kenceng Online</h2>
+                        <img src="{{ asset('../img/logo3.png') }}" class="w-32 mx-auto mb-1" alt="Logo">
+                        <h2 class="text-center font-bold text-2xl text-black">Kencleng Online</h2>
                         <h2 class="text-center text-md text-black">Semudah mengisi kotak amal, masukkan jumlah sesuai kemampuan</h2>
                         <div class="px-5 py-7">
                             <p class="text-center text-sm text-gray-600">Terima kasih atas donasi Anda. Bukti pembayaran akan diverifikasi dan kami akan menghubungi Anda segera.</p>
@@ -216,86 +244,85 @@
     <link href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" rel="stylesheet">
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    // Get form elements
-    const amountForm = document.getElementById('amount-form');
-    const contactForm = document.getElementById('contact-form');
-    const bankForm = document.getElementById('bank-form');
-    const uploadForm = document.getElementById('upload-form');
-    const successForm = document.getElementById('success-form');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get form elements
+            const amountForm = document.getElementById('amount-form');
+            const contactForm = document.getElementById('contact-form');
+            const bankForm = document.getElementById('bank-form');
+            const uploadForm = document.getElementById('upload-form');
+            const successForm = document.getElementById('success-form');
 
-    // Get buttons for navigation
-    const nextToContactButton = document.getElementById('next-to-contact');
-    const backToAmountButton = document.getElementById('back-to-amount');
-    const nextToBankButton = document.getElementById('next-to-bank');
-    const backToContactButton = document.getElementById('back-to-contact');
-    const nextToUploadButton = document.getElementById('next-to-upload');
-    const backToBankButton = document.getElementById('back-to-bank');
-    const nextToSuccessButton = document.getElementById('next-to-success');
-    const backToUploadButton = document.getElementById('back-to-upload-success');
+            // Get buttons for navigation
+            const nextToContactButton = document.getElementById('next-to-contact');
+            const backToAmountButton = document.getElementById('back-to-amount');
+            const nextToBankButton = document.getElementById('next-to-bank');
+            const backToContactButton = document.getElementById('back-to-contact');
+            const nextToUploadButton = document.getElementById('next-to-upload');
+            const backToBankButton = document.getElementById('back-to-bank');
+            const nextToSuccessButton = document.getElementById('next-to-success');
+            const backToUploadButton = document.getElementById('back-to-upload-success');
 
-    function showForm(formToShow) {
-        // Hide all forms
-        amountForm.classList.add('hidden');
-        contactForm.classList.add('hidden');
-        bankForm.classList.add('hidden');
-        uploadForm.classList.add('hidden');
-        successForm.classList.add('hidden');
+            function showForm(formToShow) {
+                // Hide all forms
+                amountForm.classList.add('hidden');
+                contactForm.classList.add('hidden');
+                bankForm.classList.add('hidden');
+                uploadForm.classList.add('hidden');
+                successForm.classList.add('hidden');
 
-        // Show the desired form
-        formToShow.classList.remove('hidden');
-    }
+                // Show the desired form
+                formToShow.classList.remove('hidden');
+            }
 
-    // Event listeners for buttons
-    if (nextToContactButton) {
-        nextToContactButton.addEventListener('click', function () {
-            showForm(contactForm);
+            // Event listeners for buttons
+            if (nextToContactButton) {
+                nextToContactButton.addEventListener('click', function() {
+                    showForm(contactForm);
+                });
+            }
+
+            if (backToAmountButton) {
+                backToAmountButton.addEventListener('click', function() {
+                    showForm(amountForm);
+                });
+            }
+
+            if (nextToBankButton) {
+                nextToBankButton.addEventListener('click', function() {
+                    showForm(bankForm);
+                });
+            }
+
+            if (backToContactButton) {
+                backToContactButton.addEventListener('click', function() {
+                    showForm(contactForm);
+                });
+            }
+
+            if (nextToUploadButton) {
+                nextToUploadButton.addEventListener('click', function() {
+                    showForm(uploadForm);
+                });
+            }
+
+            if (backToBankButton) {
+                backToBankButton.addEventListener('click', function() {
+                    showForm(bankForm);
+                });
+            }
+
+            if (nextToSuccessButton) {
+                nextToSuccessButton.addEventListener('click', function() {
+                    showForm(successForm);
+                });
+            }
+
+            if (backToUploadButton) {
+                backToUploadButton.addEventListener('click', function() {
+                    showForm(uploadForm);
+                });
+            }
         });
-    }
-
-    if (backToAmountButton) {
-        backToAmountButton.addEventListener('click', function () {
-            showForm(amountForm);
-        });
-    }
-
-    if (nextToBankButton) {
-        nextToBankButton.addEventListener('click', function () {
-            showForm(bankForm);
-        });
-    }
-
-    if (backToContactButton) {
-        backToContactButton.addEventListener('click', function () {
-            showForm(contactForm);
-        });
-    }
-
-    if (nextToUploadButton) {
-        nextToUploadButton.addEventListener('click', function () {
-            showForm(uploadForm);
-        });
-    }
-
-    if (backToBankButton) {
-        backToBankButton.addEventListener('click', function () {
-            showForm(bankForm);
-        });
-    }
-
-    if (nextToSuccessButton) {
-        nextToSuccessButton.addEventListener('click', function () {
-            showForm(successForm);
-        });
-    }
-
-    if (backToUploadButton) {
-        backToUploadButton.addEventListener('click', function () {
-            showForm(uploadForm);
-        });
-    }
-});
-
     </script>
 
 </body>
