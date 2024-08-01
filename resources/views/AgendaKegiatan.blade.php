@@ -35,10 +35,10 @@
                 <div class="ml-auto flex items-center space-x-2">
                     <div class="flex justify-center ml-28">
                         <div class="bg-gray-200 p-2 rounded mr-5">
-                            <h2 class="text-sm font-semibold">Senin, 4 Januari 2024</h2>
+                            <h2 id="current-date" class="text-sm font-semibold"></h2>
                         </div>
                         <div class="bg-gray-200 p-2 rounded">
-                            <h2 class="text-sm font-semibold">Waktu 18:10</h2>
+                            <h2 id="current-time" class="text-sm font-semibold"></h2>
                         </div>
                     </div>
                 </div>
@@ -197,6 +197,35 @@
                 slider2.style.transform = `translateX(-${currentSlide2 * 50}%)`;
             }
         }
+    </script>
+    <script>
+        function formatDate(date) {
+            const options = {
+                weekday: 'long',
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric'
+            };
+            return date.toLocaleDateString('id-ID', options);
+        }
+
+        function formatTime(date) {
+            const hours = date.getHours().toString().padStart(2, '0');
+            const minutes = date.getMinutes().toString().padStart(2, '0');
+            return `${hours}:${minutes}`;
+        }
+
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('current-date').innerText = formatDate(now);
+            document.getElementById('current-time').innerText = `Waktu ${formatTime(now)}`;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial update
+        document.addEventListener('DOMContentLoaded', updateDateTime);
     </script>
 </body>
 

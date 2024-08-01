@@ -13,7 +13,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // API URL
+            const apiUrl =
+                'https://api.aladhan.com/v1/calendarByCity/2024/8?city=Bandung&country=Indonesia&method=2';
 
+            // Fetch data from API
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.code === 200) {
+                        // Extract relevant data
+                        const timings = data.data[0].timings;
+                        const date = data.data[0].date.gregorian;
+
+                        // Update HTML with data
+                        document.getElementById('date').innerText = `${date.day} ${date.month.en} ${date.year}`;
+                        document.getElementById('subuh').innerText = timings.Fajr.split(' ')[0];
+                        document.getElementById('dzuhur').innerText = timings.Dhuhr.split(' ')[0];
+                        document.getElementById('ashar').innerText = timings.Asr.split(' ')[0];
+                        document.getElementById('maghrib').innerText = timings.Maghrib.split(' ')[0];
+                        document.getElementById('isya').innerText = timings.Isha.split(' ')[0];
+                    }
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to update the clock
+            function updateClock() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+                const timeString = `${hours}:${minutes}:${seconds}`;
+
+                document.getElementById('live-time').innerText = timeString;
+            }
+
+            // Update the clock every second
+            setInterval(updateClock, 1000);
+
+            // Initial call to display clock immediately
+            updateClock();
+        });
+    </script>
 </head>
 
 <body class="bg-gray-100">
@@ -27,10 +74,10 @@
                 <div class="flex justify-center mb-5">
                     <div class="mr-4">
                         <h2 class="text-sm font-semibold">Waktu Sholat Bandung</h2>
-                        <p class="text-xs text-gray-600">Senin, 19 Juli 2024</p>
+                        <p class="text-xs text-gray-600" id="date">Tanggal</p>
                     </div>
                     <div class="bg-gray-200 p-2 rounded">
-                        <h2 class="text-sm fon-semibold">Waktu 18:10</h2>
+                        <h2 class="text-sm font-semibold" id="live-time">--:--:--</h2>
                     </div>
                     <div class="ml-8 mt-1">
                         <a href="/login"
@@ -40,23 +87,23 @@
                 <div class="flex items-center rounded-sm space-x-4 bg-green-100 p-2">
                     <div class="bg-white p-2 rounded-md">
                         <p class="text-xs font-semibold">SUBUH</p>
-                        <p class="text-sm font-bold">04:45</p>
+                        <p class="text-sm font-bold" id="subuh">--:--</p>
                     </div>
                     <div class="bg-white p-2 rounded-md">
                         <p class="text-xs font-semibold">DZUHUR</p>
-                        <p class="text-sm font-bold">12:18</p>
+                        <p class="text-sm font-bold" id="dzuhur">--:--</p>
                     </div>
                     <div class="bg-white p-2 rounded-md">
                         <p class="text-xs font-semibold">ASHAR</p>
-                        <p class="text-sm font-bold">15:04</p>
+                        <p class="text-sm font-bold" id="ashar">--:--</p>
                     </div>
                     <div class="bg-white p-2 rounded-md">
                         <p class="text-xs font-semibold">MAGHRIB</p>
-                        <p class="text-sm font-bold">17:58</p>
+                        <p class="text-sm font-bold" id="maghrib">--:--</p>
                     </div>
                     <div class="bg-white p-2 rounded-md">
                         <p class="text-xs font-semibold">ISYA</p>
-                        <p class="text-sm font-bold">16:35</p>
+                        <p class="text-sm font-bold" id="isya">--:--</p>
                     </div>
                 </div>
             </div>
