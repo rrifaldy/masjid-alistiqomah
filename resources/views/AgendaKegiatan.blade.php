@@ -245,24 +245,24 @@
     <link href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" rel="stylesheet">
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
     <script>
-        let currentSlide1 = 0;
+        let currentSlide = 0;
         let currentSlide2 = 0;
 
         function slideLeft1() {
-            const slider1 = document.getElementById('slider1');
-            const slides1 = slider1.children;
-            if (currentSlide1 > 0) {
-                currentSlide1--;
-                slider1.style.transform = `translateX(-${currentSlide1 * 50}%)`;
+            const slider = document.getElementById('slider');
+            const slides = slider.children;
+            if (currentSlide > 0) {
+                currentSlide--;
+                slider.style.transform = `translateX(-${currentSlide * 50}%)`;
             }
         }
 
-        function slideRight1() {
-            const slider1 = document.getElementById('slider1');
-            const slides1 = slider1.children;
-            if (currentSlide1 < slides1.length / 2 - 1) {
-                currentSlide1++;
-                slider1.style.transform = `translateX(-${currentSlide1 * 50}%)`;
+        function slideRight() {
+            const slider = document.getElementById('slider');
+            const slides = slider.children;
+            if (currentSlide < slides.length / 2 - 1) {
+                currentSlide++;
+                slider.style.transform = `translateX(-${currentSlide * 50}%)`;
             }
         }
 

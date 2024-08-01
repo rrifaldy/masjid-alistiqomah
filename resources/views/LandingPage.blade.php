@@ -32,7 +32,7 @@
                     <div class="bg-gray-200 p-2 rounded">
                         <h2 class="text-sm fon-semibold">Waktu 18:10</h2>
                     </div>
-                    <div class="ml-8">
+                    <div class="ml-8 mt-1">
                         <a href="/login"
                             class="bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">Login</a>
                     </div>
