@@ -35,9 +35,7 @@ Route::get('/', function () {
     return view('LandingPage');
 });
 
-Route::get('/agenda', function () {
-    return view('AgendaKegiatan');
-});
+Route::get('/agenda', [AgendaController::class, 'home'])->name('agenda');
 
 Route::get('/infaq', function () {
     return view('Infaq');
