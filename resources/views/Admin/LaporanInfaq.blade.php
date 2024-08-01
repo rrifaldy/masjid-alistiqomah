@@ -13,17 +13,17 @@
 
         <div class="overflow-x-auto flex justify-center">
 
-            <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8">
                 <form class="space-y-6" action="#">
-                    <h5 class="text-xl font-medium text-gray-900 dark:text-white">Cetak Laporan Infaq</h5>
+                    <h5 class="text-xl font-medium text-gray-900">Cetak Laporan Infaq</h5>
                     <div class="flex flex-wrap gap-4">
                         <div class="flex-1">
-                            <label for="tanggal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih Tanggal</label>
-                            <input type="date" name="tanggal" id="tanggal" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required />
+                            <label for="tanggal" class="block mb-2 text-sm font-medium text-gray-900">Pilih Tanggal</label>
+                            <input type="date" name="tanggal" id="tanggal" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@company.com" required />
                         </div>
                         <div class="flex-1">
-                            <label for="pembayaran" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih Pembayaran</label>
-                            <select name="pembayaran" id="pembayaran" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                            <label for="pembayaran" class="block mb-2 text-sm font-medium text-gray-900">Pilih Pembayaran</label>
+                            <select name="pembayaran" id="pembayaran" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                                 <option value="" disabled selected>Pilih Metode Pembayaran</option>
                                 <option value="GoPay">GoPay</option>
                                 <option value="OVO">OVO</option>

@@ -29,13 +29,13 @@
     <div id="input-modal" tabindex="-1" aria-hidden="true"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-md max-h-full">
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            <div class="relative bg-white rounded-lg shadow">
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-lg font-semibold text-gray-900">
                         Tambah Data Kegiatan
                     </h3>
                     <button type="button"
-                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center"
                         data-modal-toggle="input-modal">
                         <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 14 14">
@@ -50,26 +50,26 @@
                     @csrf
                     <div class="grid gap-4 mb-4">
                         <div class="col-span-2">
-                            <label for="nama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
+                            <label for="nama" class="block mb-2 text-sm font-medium text-gray-900">Nama
                                 Kegiatan</label>
                             <input type="text" name="nama" id="nama"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Kegiatan" required="">
                         </div>
                         <div class="col-span-2">
-                            <label for="pengisi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
+                            <label for="pengisi" class="block mb-2 text-sm font-medium text-gray-900">Nama
                                 Pengisi</label>
                             <input type="text" name="pengisi" id="pengisi"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Kegiatan" required="">
                         </div>
                         <div class="grid grid-cols-3 gap-4 col-span-2">
                             <div>
                                 <label for="hari"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Hari
+                                    class="block mb-2 text-sm font-medium text-gray-900">Hari
                                     Kegiatan</label>
                                 <select name="hari" id="hari"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                     required="">
                                     <option value="" disabled selected>Pilih hari</option>
                                     <option value="Senin">Senin</option>
@@ -83,31 +83,31 @@
                             </div>
                             <div>
                                 <label for="tanggal"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal
+                                    class="block mb-2 text-sm font-medium text-gray-900">Tanggal
                                     Kegiatan</label>
                                 <input type="date" name="tanggal" id="tanggal"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                     placeholder="Harga Sewa" required="">
                             </div>
                             <div>
                                 <label for="jam"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jam</label>
+                                    class="block mb-2 text-sm font-medium text-gray-900">Jam</label>
                                 <input type="time" name="jam" id="jam"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                     placeholder="Kapasitas" required="">
                             </div>
                         </div>
                         <div class="col-span-2">
                             <label for="gambar"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gambar</label>
+                                class="block mb-2 text-sm font-medium text-gray-900">Gambar</label>
                             <input type="file" name="gambar" id="gambar"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Mobil" required="">
                         </div>
                         <div class="col-span-2 flex items-center">
                             <input type="checkbox" name="status" value="belum" id="status"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 mr-2">
-                            <label for="status" class="text-sm font-medium text-gray-900 dark:text-white">Yang akan
+                                class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg mr-2">
+                            <label for="status" class="text-sm font-medium text-gray-900">Yang akan
                                 datang</label>
                         </div>
                     </div>
@@ -130,9 +130,9 @@
     <div id="selesai-modal" tabindex="-1"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-md max-h-full">
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow">
                 <button type="button"
-                    class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                     data-modal-hide="selesai-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 14 14">
@@ -142,19 +142,19 @@
                     <span class="sr-only">Close modal</span>
                 </button>
                 <div class="p-4 md:p-5 text-center">
-                    <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true"
+                    <svg class="mx-auto mb-4 text-gray-400 w-12 h-12" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
-                    <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Apakah anda ingin menyelesaikan
+                    <h3 class="mb-5 text-lg font-normal text-gray-500">Apakah anda ingin menyelesaikan
                         kegiatan ini?</h3>
                     <button data-modal-hide="selesai-modal" type="button"
-                        class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
+                        class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
                         Ya
                     </button>
                     <button data-modal-hide="selesai-modal" type="button"
-                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-green-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Tidak,
+                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-green-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Tidak,
                         batalkan</button>
                 </div>
             </div>
@@ -165,13 +165,13 @@
     <div id="edit-modal" tabindex="-1" aria-hidden="true"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-md max-h-full">
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            <div class="relative bg-white rounded-lg shadow">
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-lg font-semibold text-gray-900">
                         Tambah Data Kegiatan
                     </h3>
                     <button type="button"
-                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center"
                         data-modal-toggle="edit-modal">
                         <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 14 14">
@@ -189,18 +189,18 @@
                     <div class="grid gap-4 mb-4">
                         <div class="col-span-2">
                             <label for="nama_kegiatan"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Kegiatan</label>
+                                class="block mb-2 text-sm font-medium text-gray-900">Nama Kegiatan</label>
                             <input type="text" name="nama_kegiatan" id="nama_kegiatan"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Kegiatan" required>
                         </div>
                         <div class="grid grid-cols-3 gap-4 col-span-2">
                             <div>
                                 <label for="hari"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Hari
+                                    class="block mb-2 text-sm font-medium text-gray-900">Hari
                                     Kegiatan</label>
                                 <select name="hari" id="hari"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                     required>
                                     <option value="" disabled selected>Pilih hari</option>
                                     <option value="Senin">Senin</option>
@@ -214,32 +214,32 @@
                             </div>
                             <div>
                                 <label for="tanggal"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal
+                                    class="block mb-2 text-sm font-medium text-gray-900">Tanggal
                                     Kegiatan</label>
                                 <input type="date" name="tanggal" id="tanggal"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                     placeholder="Tanggal Kegiatan" required>
                             </div>
                             <div>
                                 <label for="jam"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jam</label>
+                                    class="block mb-2 text-sm font-medium text-gray-900">Jam</label>
                                 <input type="time" name="jam" id="jam"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                     placeholder="Jam" required>
                             </div>
                         </div>
                         <div class="col-span-2">
                             <label for="pengisi"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pengisi</label>
+                                class="block mb-2 text-sm font-medium text-gray-900">Pengisi</label>
                             <input type="text" name="pengisi" id="pengisi"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Pengisi" required>
                         </div>
                         <div class="col-span-2">
                             <label for="gambar"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gambar</label>
+                                class="block mb-2 text-sm font-medium text-gray-900">Gambar</label>
                             <input type="file" name="gambar" id="gambar"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Gambar">
                             <!-- Optional: Display current image -->
                             <img id="img-preview" src="" alt="Current Image"
@@ -247,8 +247,8 @@
                         </div>
                         <div class="col-span-2 flex items-center">
                             <input type="checkbox" name="status" id="status"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 mr-2">
-                            <label for="status" class="text-sm font-medium text-gray-900 dark:text-white">Aktif</label>
+                                class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg mr-2">
+                            <label for="status" class="text-sm font-medium text-gray-900">Aktif</label>
                         </div>
                     </div>
                     <button type="submit"
@@ -271,9 +271,9 @@
     <div id="hapus-modal" tabindex="-1"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-md max-h-full">
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow">
                 <button type="button"
-                    class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                     data-modal-hide="hapus-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 14 14">
@@ -283,19 +283,19 @@
                     <span class="sr-only">Close modal</span>
                 </button>
                 <div class="p-4 md:p-5 text-center">
-                    <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true"
+                    <svg class="mx-auto mb-4 text-gray-400 w-12 h-12" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
-                    <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Apakah anda ingin menghapus
+                    <h3 class="mb-5 text-lg font-normal text-gray-500">Apakah anda ingin menghapus
                         kegiatan ini?</h3>
                     <button data-modal-hide="hapus-modal" type="button"
-                        class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
+                        class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
                         Ya
                     </button>
                     <button data-modal-hide="hapus-modal" type="button"
-                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-green-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Tidak,
+                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-green-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Tidak,
                         batalkan</button>
                 </div>
             </div>

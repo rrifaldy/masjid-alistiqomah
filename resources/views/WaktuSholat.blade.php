@@ -77,7 +77,7 @@
         <div class="flex mr-5 justify-center mb-5">
             <div class="flex gap-5 justify-center w-1/3">
                 <div class="flex-1">
-                    <select id="month" name="month" class="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300">
+                    <select id="month" name="month" class="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         <option value="1">Januari</option>
                         <option value="2">Februari</option>
                         <option value="3">Maret</option>
@@ -93,7 +93,7 @@
                     </select>
                 </div>
                 <div class="flex-1">
-                    <select id="year" name="year" class="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300">
+                    <select id="year" name="year" class="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         <option value="2023">2023</option>
                         <option value="2024">2024</option>
                         <option value="2025">2025</option>
@@ -106,8 +106,8 @@
 
         <div class="table-sholat">
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-white uppercase bg-green-700 dark:bg-gray-700 dark:text-gray-400">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                    <thead class="text-xs text-white uppercase bg-green-700">
                         <tr>
                             <th scope="col" class="px-6 py-3">
                                 Tanggal
@@ -136,7 +136,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                        <tr class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b">
                             <td class="px-6 py-4">
                                 31/07
                             </td>
@@ -162,7 +162,7 @@
                                 15 Dzulhijjah
                             </td>
                         </tr>
-                        <tr class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                        <tr class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b">
                             <td class="px-6 py-4">
                                 01/08
                             </td>
@@ -188,7 +188,7 @@
                                 16 Dzulhijjah
                             </td>
                         </tr>
-                        <tr class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                        <tr class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b">
                             <td class="px-6 py-4">
                                 02/08
                             </td>

@@ -5,13 +5,13 @@
     <div id="input-modal" tabindex="-1" aria-hidden="true"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-md max-h-full">
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            <div class="relative bg-white rounded-lg shadow">
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-lg font-semibold text-gray-900">
                         Tambah Data Infaq
                     </h3>
                     <button type="button"
-                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center"
                         data-modal-toggle="input-modal">
                         <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 14 14">
@@ -26,32 +26,29 @@
                     @csrf
                     <div class="grid gap-4 mb-4">
                         <div class="col-span-2">
-                            <label for="nominal"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nominal Infaq</label>
+                            <label for="nominal" class="block mb-2 text-sm font-medium text-gray-900">Nominal Infaq</label>
                             <input type="text" name="nominal" id="nominal"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Kegiatan" required="">
                         </div>
                         <div class="col-span-2">
-                            <label for="nama"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
+                            <label for="nama" class="block mb-2 text-sm font-medium text-gray-900">Nama</label>
                             <input type="text" name="nama" id="nama"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Kegiatan" required="">
                         </div>
                         <div class="col-span-2">
-                            <label for="nomor" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor
+                            <label for="nomor" class="block mb-2 text-sm font-medium text-gray-900">Nomor
                                 Whatsapp</label>
                             <input type="text" name="nomor" id="nomor"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Kegiatan" required="">
                         </div>
                         <div class="col-span-2">
-                            <label for="metode"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Metode
+                            <label for="metode" class="block mb-2 text-sm font-medium text-gray-900">Metode
                                 Pembayaran</label>
                             <select name="metode" id="metode"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 required="">
                                 <option value="" disabled selected>Pilih Bank</option>
                                 <option value="BCA">Bank Central Asia (BCA)</option>
@@ -76,10 +73,9 @@
                             </select>
                         </div>
                         <div class="col-span-2">
-                            <label for="bukti"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bukti</label>
+                            <label for="bukti" class="block mb-2 text-sm font-medium text-gray-900">Bukti</label>
                             <input type="file" name="bukti" id="bukti"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Mobil" required="">
                         </div>
                     </div>
@@ -103,13 +99,13 @@
     <div id="edit-modal" tabindex="-1" aria-hidden="true"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-md max-h-full">
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            <div class="relative bg-white rounded-lg shadow">
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-lg font-semibold text-gray-900">
                         Ubah Data Kegiatan
                     </h3>
                     <button type="button"
-                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center"
                         data-modal-toggle="edit-modal">
                         <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 14 14">
@@ -123,32 +119,30 @@
                 <form class="p-4 md:p-5">
                     <div class="grid gap-4 mb-4">
                         <div class="col-span-2">
-                            <label for="nominal"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nominal Infaq</label>
+                            <label for="nominal" class="block mb-2 text-sm font-medium text-gray-900">Nominal
+                                Infaq</label>
                             <input type="text" name="nominal" id="nominal"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Kegiatan" required="">
                         </div>
                         <div class="col-span-2">
-                            <label for="nama"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
+                            <label for="nama" class="block mb-2 text-sm font-medium text-gray-900">Nama</label>
                             <input type="text" name="nama" id="nama"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Kegiatan" required="">
                         </div>
                         <div class="col-span-2">
-                            <label for="whatsapp"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
+                            <label for="whatsapp" class="block mb-2 text-sm font-medium text-gray-900">Nomor
+                                Whatsapp</label>
                             <input type="text" name="whatsapp" id="whatsapp"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Kegiatan" required="">
                         </div>
                         <div class="col-span-2">
-                            <label for="pembayaran"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Metode
+                            <label for="pembayaran" class="block mb-2 text-sm font-medium text-gray-900">Metode
                                 Pembayaran</label>
                             <select name="pembayaran" id="pembayaran"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 required="">
                                 <option value="" disabled selected>Pilih Bank</option>
                                 <option value="BCA">Bank Central Asia (BCA)</option>
@@ -173,10 +167,9 @@
                             </select>
                         </div>
                         <div class="col-span-2">
-                            <label for="bukti"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bukti</label>
+                            <label for="bukti" class="block mb-2 text-sm font-medium text-gray-900">Bukti</label>
                             <input type="file" name="bukti" id="bukti"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                 placeholder="Nama Mobil" required="">
                         </div>
                     </div>
@@ -199,9 +192,9 @@
     <div id="hapus-modal" tabindex="-1"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-md max-h-full">
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow">
                 <button type="button"
-                    class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                     data-modal-hide="hapus-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 14 14">
@@ -211,19 +204,19 @@
                     <span class="sr-only">Close modal</span>
                 </button>
                 <div class="p-4 md:p-5 text-center">
-                    <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true"
+                    <svg class="mx-auto mb-4 text-gray-400 w-12 h-12" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
-                    <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Apakah anda ingin menghapus data
+                    <h3 class="mb-5 text-lg font-normal text-gray-500">Apakah anda ingin menghapus data
                         ini?</h3>
                     <button data-modal-hide="hapus-modal" type="button"
-                        class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
+                        class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
                         Ya
                     </button>
                     <button data-modal-hide="hapus-modal" type="button"
-                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-green-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Tidak,
+                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-green-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Tidak,
                         batalkan</button>
                 </div>
             </div>
@@ -235,14 +228,14 @@
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-2xl max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow">
                 <!-- Modal header -->
-                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-gray-900">
                         Detail Infaq
                     </h3>
                     <button type="button"
-                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                         data-modal-hide="detail-modal">
                         <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 14 14">
@@ -260,28 +253,28 @@
                     </div>
                     <div class="space-y-6">
                         <div class="flex flex-col">
-                            <span class="font-semibold text-gray-900 dark:text-white">Nominal:</span>
-                            <span class="text-gray-500 dark:text-gray-400">Rp 500.000</span>
+                            <span class="font-semibold text-gray-900">Nominal:</span>
+                            <span class="text-gray-500">Rp 500.000</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-semibold text-gray-900 dark:text-white">Nama:</span>
-                            <span class="text-gray-500 dark:text-gray-400">John Doe</span>
+                            <span class="font-semibold text-gray-900">Nama:</span>
+                            <span class="text-gray-500">John Doe</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-semibold text-gray-900 dark:text-white">No Whatsapp:</span>
-                            <span class="text-gray-500 dark:text-gray-400">081234567890</span>
+                            <span class="font-semibold text-gray-900">No Whatsapp:</span>
+                            <span class="text-gray-500">081234567890</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-semibold text-gray-900 dark:text-white">Pembayaran:</span>
-                            <span class="text-gray-500 dark:text-gray-400">GoPay, BCA</span>
+                            <span class="font-semibold text-gray-900">Pembayaran:</span>
+                            <span class="text-gray-500">GoPay, BCA</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-semibold text-gray-900 dark:text-white">Hari/Tanggal:</span>
-                            <span class="text-gray-500 dark:text-gray-400">Senin, 31 Juli 2024</span>
+                            <span class="font-semibold text-gray-900">Hari/Tanggal:</span>
+                            <span class="text-gray-500">Senin, 31 Juli 2024</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-semibold text-gray-900 dark:text-white">Jam:</span>
-                            <span class="text-gray-500 dark:text-gray-400">14:30</span>
+                            <span class="font-semibold text-gray-900">Jam:</span>
+                            <span class="text-gray-500">14:30</span>
                         </div>
                     </div>
                 </div>
@@ -296,7 +289,7 @@
                 <div class="flex justify-between mb-10">
                     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Manajemen Infaq</h1>
                     <button data-modal-target="input-modal" data-modal-toggle="input-modal"
-                        class="text-white bg-primary hover:bg-primary focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm py-1 px-4 text-center items-center">
+                        class="text-black bg-primary hover:bg-primary focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm py-1 px-4 text-center items-center">
                         Tambah
                     </button>
                 </div>
