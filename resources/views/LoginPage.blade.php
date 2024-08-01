@@ -27,7 +27,7 @@
                         <input type="password" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
                             placeholder="Password" name="password" required />
                         <button type="submit"
-                            class="transition duration-200 bg-primary hover:bg-secondary focus:bg-primary focus:shadow-sm focus:ring-4 focus:ring-primary focus:ring-opacity-50 text-black w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">
+                            class="transition duration-200 text-white bg-green-600 hover:bg-yellow-600 focus:bg-primary focus:shadow-sm focus:ring-4 focus:ring-primary focus:ring-opacity-50 w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">
                             <span class="inline-block mr-2">Login</span>
                         </button>
                     </div>
