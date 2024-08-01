@@ -17,6 +17,14 @@ class AgendaController extends Controller
         return view('Admin.ManajemenAgenda', compact('agendas'));
     }
 
+    public function home()
+    {
+        $agendaAktifs = Agenda::where('status', 'aktif')->get();
+        $agendaBelums = Agenda::where('status', 'belum')->get();
+
+        return view('AgendaKegiatan', compact('agendaAktifs', 'agendaBelums'));
+    }
+
     public function laporan()
     {
         $agendas = Agenda::all();

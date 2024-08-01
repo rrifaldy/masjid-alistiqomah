@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AgendaController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InfaqController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -31,13 +32,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/laporan-infaq', [InfaqController::class, 'laporan'])->name('manajemen-infaq.laporan');
 });
 
-Route::get('/', function () {
-    return view('LandingPage');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/agenda', function () {
-    return view('AgendaKegiatan');
-});
+Route::get('/agenda', [AgendaController::class, 'home'])->name('agenda');
 
 Route::get('/infaq', function () {
     return view('Infaq');

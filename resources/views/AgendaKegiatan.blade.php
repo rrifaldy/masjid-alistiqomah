@@ -77,167 +77,81 @@
             <h2 class="font-bold text-2xl p-5">Kegiatan Rutin</h2>
             <div class="flex w-full transition-transform duration-500 ease-in-out" id="slider">
                 <!-- First Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 1</h2>
-                        <p class="mb-1">Tanggal: 01/08/2024</p>
-                        <p>Pengisi: Ustadz A</p>
+                @forelse ($agendaAktifs as $agendaAktif)
+                    <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
+                        <img src="{{ asset('images/' . $agendaAktif->gambar) }}" alt="Activity Image"
+                            class="w-1/3 rounded-md">
+                        <div class="flex flex-col justify-center w-2/3 text-black">
+                            <h2 class="text-2xl font-bold mb-2">{{ $agendaAktif->nama }}</h2>
+                            <p class="mb-1">{{ $agendaAktif->tanggal }}</p>
+                            <p>{{ $agendaAktif->pengisi }}</p>
+                        </div>
                     </div>
-                </div>
+                @empty
+                    <h3>Belum Ada Kegiatan</h3>
+                @endforelse
 
-                <!-- Second Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 2</h2>
-                        <p class="mb-1">Tanggal: 15/08/2024</p>
-                        <p>Pengisi: Ustadz B</p>
-                    </div>
-                </div>
-
-                <!-- Third Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 3</h2>
-                        <p class="mb-1">Tanggal: 22/08/2024</p>
-                        <p>Pengisi: Ustadz C</p>
-                    </div>
-                </div>
-
-                <!-- Fourth Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 4</h2>
-                        <p class="mb-1">Tanggal: 29/08/2024</p>
-                        <p>Pengisi: Ustadz D</p>
-                    </div>
-                </div>
-
-                <!-- Fifth Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 5</h2>
-                        <p class="mb-1">Tanggal: 05/09/2024</p>
-                        <p>Pengisi: Ustadz E</p>
-                    </div>
-                </div>
-
-                <!-- Sixth Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 6</h2>
-                        <p class="mb-1">Tanggal: 12/09/2024</p>
-                        <p>Pengisi: Ustadz F</p>
-                    </div>
-                </div>
+                <!-- Slider Controls -->
+                <button
+                    class="absolute top-1/2 left-4 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200"
+                    onclick="slideLeft()">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </button>
+                <button
+                    class="absolute top-1/2 right-4 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200"
+                    onclick="slideRight()">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
             </div>
 
-            <!-- Slider Controls -->
-            <button
-                class="absolute top-1/2 left-4 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200"
-                onclick="slideLeft()">
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-            </button>
-            <button
-                class="absolute top-1/2 right-4 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200"
-                onclick="slideRight()">
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </button>
-        </div>
+            <div class="relative overflow-hidden">
+                <h2 class="font-bold text-2xl p-5">Kegiatan Yang Akan Datang</h2>
+                <div class="flex w-full transition-transform duration-500 ease-in-out" id="slider2">
+                    <!-- First Card -->
+                    @forelse ($agendaBelums as $agendaBelum)
+                        <div
+                            class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
+                            <img src="{{ asset('images/' . $agendaBelum->gambar) }}" alt="Activity Image"
+                                class="w-1/3 rounded-md">
+                            <div class="flex flex-col justify-center w-2/3 text-black">
+                                <h2 class="text-2xl font-bold mb-2">{{ $agendaBelum->nama }}</h2>
+                                <p class="mb-1">{{ $agendaBelum->tanggal }}</p>
+                                <p>{{ $agendaBelum->pengisi }}</p>
+                            </div>
+                        </div>
+                    @empty
+                        <h3>Belum Ada Kegiatan</h3>
+                    @endforelse
 
-        <div class="relative overflow-hidden">
-            <h2 class="font-bold text-2xl p-5">Kegiatan Yang Akan Datang</h2>
-            <div class="flex w-full transition-transform duration-500 ease-in-out" id="slider2">
-                <!-- First Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 1</h2>
-                        <p class="mb-1">Tanggal: 01/08/2024</p>
-                        <p>Pengisi: Ustadz A</p>
-                    </div>
                 </div>
 
-                <!-- Second Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 2</h2>
-                        <p class="mb-1">Tanggal: 15/08/2024</p>
-                        <p>Pengisi: Ustadz B</p>
-                    </div>
-                </div>
-
-                <!-- Third Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 3</h2>
-                        <p class="mb-1">Tanggal: 22/08/2024</p>
-                        <p>Pengisi: Ustadz C</p>
-                    </div>
-                </div>
-
-                <!-- Fourth Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 4</h2>
-                        <p class="mb-1">Tanggal: 29/08/2024</p>
-                        <p>Pengisi: Ustadz D</p>
-                    </div>
-                </div>
-
-                <!-- Fifth Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4 mr-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 5</h2>
-                        <p class="mb-1">Tanggal: 05/09/2024</p>
-                        <p>Pengisi: Ustadz E</p>
-                    </div>
-                </div>
-
-                <!-- Sixth Card -->
-                <div class="flex-none w-1/2 p-4 bg-green-200 rounded-lg shadow-lg flex items-center space-x-4">
-                    <img src="https://via.placeholder.com/150" alt="Activity Image" class="w-1/3 rounded-md">
-                    <div class="flex flex-col justify-center w-2/3 text-black">
-                        <h2 class="text-2xl font-bold mb-2">Kegiatan 6</h2>
-                        <p class="mb-1">Tanggal: 12/09/2024</p>
-                        <p>Pengisi: Ustadz F</p>
-                    </div>
-                </div>
+                <!-- Slider Controls -->
+                <button
+                    class="absolute top-1/2 left-4 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200"
+                    onclick="slideLeft2()">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </button>
+                <button
+                    class="absolute top-1/2 right-4 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200"
+                    onclick="slideRight2()">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                        </path>
+                    </svg>
+                </button>
             </div>
-
-            <!-- Slider Controls -->
-            <button
-                class="absolute top-1/2 left-4 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200"
-                onclick="slideLeft2()">
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-            </button>
-            <button
-                class="absolute top-1/2 right-4 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200"
-                onclick="slideRight2()">
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </button>
-        </div>
 
     </main>
 
