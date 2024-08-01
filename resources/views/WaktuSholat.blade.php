@@ -7,7 +7,9 @@
     @vite('resources/css/app.css')
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
     <style>
@@ -22,10 +24,16 @@
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center justify-between p-5 bg-green-600 rounded-md mb-5">
                 <div class="flex space-x-4 mr-60">
-                    <button class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">BERANDA</button>
-                    <button class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">AGENDA KEGIATAN</button>
-                    <button class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">INFAQ</button>
-                    <button class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">WAKTU SHOLAT</button>
+                    <a href="/"
+                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">BERANDA</a>
+                    <a href="/agenda"
+                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">AGENDA
+                        KEGIATAN</a>
+                    <a href="/infaq"
+                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">INFAQ</a>
+                    <a href="/waktu-sholat"
+                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">WAKTU
+                        SHOLAT</a>
                 </div>
                 <div class="ml-auto flex items-center space-x-2">
                     <div class="flex justify-center ml-28">
@@ -77,7 +85,8 @@
         <div class="flex mr-5 justify-center mb-5">
             <div class="flex gap-5 justify-center w-1/3">
                 <div class="flex-1">
-                    <select id="month" name="month" class="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <select id="month" name="month"
+                        class="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         <option value="1">Januari</option>
                         <option value="2">Februari</option>
                         <option value="3">Maret</option>
@@ -93,7 +102,8 @@
                     </select>
                 </div>
                 <div class="flex-1">
-                    <select id="year" name="year" class="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <select id="year" name="year"
+                        class="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         <option value="2023">2023</option>
                         <option value="2024">2024</option>
                         <option value="2025">2025</option>
@@ -136,7 +146,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b">
+                        <tr
+                            class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b">
                             <td class="px-6 py-4">
                                 31/07
                             </td>
@@ -162,7 +173,8 @@
                                 15 Dzulhijjah
                             </td>
                         </tr>
-                        <tr class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b">
+                        <tr
+                            class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b">
                             <td class="px-6 py-4">
                                 01/08
                             </td>
@@ -188,7 +200,8 @@
                                 16 Dzulhijjah
                             </td>
                         </tr>
-                        <tr class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b">
+                        <tr
+                            class="odd:bg-green-100 odd:dark:bg-gray-900 even:bg-gray-200 even:dark:bg-gray-800 border-b">
                             <td class="px-6 py-4">
                                 02/08
                             </td>

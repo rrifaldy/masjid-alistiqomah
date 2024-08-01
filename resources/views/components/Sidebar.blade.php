@@ -138,7 +138,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/supir"
+                                    <a href="/logout"
                                         class="text-base text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group hover:text-primary">
                                         <svg class="w-6 h-6 text-gray-500 group-hover:text-primary transition duration-75"
                                             fill="currentColor" viewBox="0 0 24 24"

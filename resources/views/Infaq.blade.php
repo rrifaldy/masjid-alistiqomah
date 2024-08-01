@@ -49,14 +49,16 @@
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center justify-between p-5 bg-green-600 rounded-md mb-5">
                 <div class="flex space-x-4 mr-60">
-                    <button
-                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">BERANDA</button>
-                    <button class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">AGENDA
-                        KEGIATAN</button>
-                    <button
-                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">INFAQ</button>
-                    <button class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">WAKTU
-                        SHOLAT</button>
+                    <a href="/"
+                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">BERANDA</a>
+                    <a href="/agenda"
+                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">AGENDA
+                        KEGIATAN</a>
+                    <a href="/infaq"
+                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">INFAQ</a>
+                    <a href="/waktu-sholat"
+                        class="text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded">WAKTU
+                        SHOLAT</a>
                 </div>
                 <div class="ml-auto flex items-center space-x-2">
                     <div class="flex justify-center ml-28">

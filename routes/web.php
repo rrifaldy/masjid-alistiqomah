@@ -46,7 +46,7 @@ Route::get('/infaq', function () {
 Route::get('/infaq', function () {
     return view('Infaq');
 });
-Route::post('/infaq', [InfaqController::class, 'input'])->name('infaq');
+Route::post('/infaq', [InfaqController::class, 'input'])->name('infaq.store');
 
 Route::get('/waktu-sholat', function () {
     return view('WaktuSholat');
